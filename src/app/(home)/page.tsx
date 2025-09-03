@@ -4,12 +4,13 @@ import { Button } from "@/components/ui/button";
 
 export default function Home() {
     return (
-        <main className="background min-h-screen flex flex-col xl:flex-row items-center justify-center gap-10">
+        <main className="background min-h-screen flex flex-col xl:flex-row items-center justify-center gap-10 p-2">
             <Image 
                 src="./logo.svg"
-                alt="Preview"
+                alt="Logo"
                 width={519}
                 height={472}
+		        className="text-sky-600"
             />
             <div>
                 <h1 className="text-5xl font-semibold my-6 max-w-[500px]">
@@ -18,7 +19,8 @@ export default function Home() {
                     {' '}efficiently
                 </h1>
                 <p className="text-2xl font-medium max-w-[600px]">
-                    Use our platform to track, organize, and streamline your sales orders. 
+                    tsystem provides a reliable environment to create, track, and 
+                    manage orders for financial instruments. 
                 </p>
                 <div className="mt-10 space-x-3">
                     <Button asChild>
