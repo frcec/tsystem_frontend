@@ -1,20 +1,23 @@
 import { cn } from "@/lib/utils";
 
 type GammaAvatarProps = {
+    className?: string;
     gamma: number;
 };
 
-export default function GammaAvatar({ gamma }: GammaAvatarProps) {
+export default function GammaAvatar({ 
+    className,
+    gamma 
+}: GammaAvatarProps) {
     return (
         <div 
             className={cn(
-                "flex items-center justify-center w-[45px] h-[45px] rounded-3xl", 
-                gamma < 0 ? "bg-sky-600/75" : gamma > 0 ? "bg-red-600/75" : "bg-zinc-400"
+                "flex items-center justify-center rounded-3xl text-white font-semibold tabular-nums", 
+                gamma < 0 ? "bg-sky-600/75" : gamma > 0 ? "bg-red-600/75" : "bg-zinc-400",
+                className
             )}
         >
-            <span className="text-white text-[0.7rem] font-semibold">
-                {gamma.toFixed(2)}
-            </span>
+            {gamma.toFixed(2)}
         </div>
     );
 }

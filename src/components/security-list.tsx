@@ -62,12 +62,12 @@ function SecurityListItem({
                     "bg-[#EFF1F2]": security.id === selectedSecurityId,
                 })}
             >
-                <GammaAvatar gamma={security.gamma} />
+                <GammaAvatar 
+                    className="w-[45px] h-[45px] text-[0.7rem]"
+                    gamma={security.gamma} 
+                />
                 <p className="font-semibold">
-                    {security.name}{' '}
-                    <span className="text-xs text-zinc-600">
-                        {security.exchange}:{security.symbol}
-                    </span>
+                    {security.name}
                 </p>
             </button>
         </li>

@@ -12,7 +12,7 @@ export default async function Layout({ children }: { children: React.ReactNode }
     return (
         <>
             <BackgroundPattern />
-            <div className="flex flex-col mx-auto min-h-screen max-w-[80rem] px-4">
+            <div className="flex flex-col mx-auto min-h-screen max-w-[1050px] sm:max-w-[1280px] px-4">
                 <AppHeader />
                 <FilterContextProvider>
                     <SecurityContextProvider data={securities}>

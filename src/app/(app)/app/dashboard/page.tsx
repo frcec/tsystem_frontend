@@ -1,6 +1,7 @@
 import Branding from "@/components/branding";
 import ContentBlock from "@/components/content-block";
 import SearchForm from "@/components/search-form";
+import SecurityDetails from "@/components/security-details";
 import SecurityList from "@/components/security-list";
 import SortBtn from "@/components/sort-btn";
 import Stats from "@/components/stats";
@@ -19,14 +20,14 @@ export default function Page() {
                 <div className="relative md:row-start-2 md:row-span-full md:col-start-1 md:col-span-1">
                     <ContentBlock>
                         <SecurityList />
-                        <div className="absolute bottom-4 right-4">
+                        <div className="absolute bottom-5 right-5">
                             <SortBtn />
                         </div>
                     </ContentBlock>
                 </div>
                 <div className="md:row-start-1 md:row-span-full md:col-start-2 md:col-span-full">
                     <ContentBlock>
-                        C                 
+                        <SecurityDetails />
                     </ContentBlock>
                 </div>
             </div>

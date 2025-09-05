@@ -8,6 +8,7 @@ export default function SortBtn() {
     const { sortAscending, toggleSortDir } = useFilterContext();
     return (
         <Button 
+            className="cursor-pointer"
             onClick={toggleSortDir}
             size="icon" 
         >
