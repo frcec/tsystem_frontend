@@ -3,6 +3,7 @@ import { useMemo } from "react";
 import { useSecurityContext, useFilterContext } from "@/lib/hooks";
 import { cn } from "@/lib/utils";
 import { OptionalSelection, Security } from "@/lib/types";
+import GammaAvatar from "./gamma-avatar";
 
 export default function SecurityList() {
     const { securities, selectedSecurityId, handleChangeSelectedSecurityId } = useSecurityContext();
@@ -61,7 +62,7 @@ function SecurityListItem({
                     "bg-[#EFF1F2]": security.id === selectedSecurityId,
                 })}
             >
-                <div className="bg-zinc-200 w-[45px] h-[45px] rounded-3xl"/>
+                <GammaAvatar gamma={security.gamma} />
                 <p className="font-semibold">
                     {security.name}{' '}
                     <span className="text-xs text-zinc-600">
